@@ -1,16 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client'; // React 18+ rendering API
-import App from './App'; // Main App component
-import './styles/styles.css'; // Global styles
+// src/index.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './styles/styles.css'
 
-// Ensure the root element exists in your index.html
-const rootElement = document.getElementById('root');
-if (rootElement) {
-  ReactDOM.createRoot(rootElement).render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-} else {
-  console.error('Root element not found. Check your index.html file.');
-}
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
